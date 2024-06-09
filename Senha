@@ -1,0 +1,11 @@
+p='S'
+senha = str(input('Cadastre uma senha: ' ))
+entrada = input("Digite a senha: ")
+while entrada != senha:
+    print("Senha incorreta, tente novamente.")
+    p=str(input('Deseja cadastrar uma nova senha? [S/N]')).upper()
+    if p == 'S':
+        senha = str(input('Cadastre uma nova senha: ' ))
+
+    entrada = input("Digite a senha: ")
+print("Senha correta!")
