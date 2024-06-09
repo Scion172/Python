@@ -6,6 +6,6 @@ while entrada != senha:
     p=str(input('Deseja cadastrar uma nova senha? [S/N]')).upper()
     if p == 'S':
         senha = str(input('Cadastre uma nova senha: ' ))
-
+        print('Nova senha cadastrada com sucesso!')
     entrada = input("Digite a senha: ")
 print("Senha correta!")
