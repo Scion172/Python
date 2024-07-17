@@ -1,0 +1,15 @@
+p='S'
+print('-=' * 23)
+print(' ____________Bem vindo ao Sistema____________')
+print('-=' * 23)
+senha = str(input('Cadastre uma senha: ' ))
+print('Nova senha cadastrada com sucesso!')
+entrada = input("Digite a senha: ")
+while entrada != senha:
+    print("Senha incorreta, tente novamente.")
+    p=str(input('Deseja cadastrar uma nova senha? [S/N]')).upper()
+    if p == 'S':
+        senha = str(input('Cadastre uma nova senha: ' ))
+        print('Nova senha cadastrada com sucesso!')
+    entrada = input("Digite a senha: ")
+print("Acesso Permitido")
